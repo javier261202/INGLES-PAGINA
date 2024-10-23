@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('patron-textura.png'); /* Imagen de fondo opcional */
+    background-size: cover;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(45deg, #4CAF50, #8BC34A); /* Degradado */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Navegación */
+nav {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    margin-top: 80px; /* Espacio para el header fijo */
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+nav a:hover {
+    color: #4CAF50; /* Cambio de color al pasar el mouse */
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.8; /* Mayor legibilidad */
+}
+
+/* Pie de página */
+footer {
+    background: linear-gradient(45deg, #4CAF50, #8BC34A);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Botón volver al inicio */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 18px;
+    display: none; /* Inicialmente oculto */
+}
+
+.back-to-top:hover {
+    background-color: #8BC34A;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para enlaces de descarga PDF */
+.download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Color verde brillante */
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    font-family: 'Arial', sans-serif;
+}
+
+.download-link:hover {
+    background-color: #45a049; /* Color al pasar el cursor */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Mayor sombra */
+}
+
+.download-link::before {
+    content: "\1F4BE "; /* Icono de disco de descarga */
+    font-size: 22px;
+    margin-right: 10px;
+}

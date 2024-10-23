@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Presente Continuo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>Presente Continuo</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a> -
+    <a href="presente-simple.html">Presente Simple</a> -
+    <a href="presente-continuo.html">Presente Continuo</a> -
+    <a href="pasado-simple.html">Pasado Simple</a> -
+    <a href="futuro.html">Futuro</a>
+    <a href="vocabulario.html">Vocabulario</a>-
+</nav>
+
+<main>
+    <section>
+        <h2>Ejercicios de Presente Continuo</h2>
+        <form id="presentContinuousForm">
+            <p>1. She <select id="presentContinuous1">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous2">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="run">run</option>
+                <option value="running">running</option>
+            </select> right now.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous1', 'presentContinuous2', 'is', 'running', 'feedbackC1')">Verificar</button>
+            <span id="feedbackC1"></span></p>
+
+            <p>2. They <select id="presentContinuous3">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous4">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="play">play</option>
+                <option value="playing">playing</option>
+            </select> football.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous3', 'presentContinuous4', 'are', 'playing', 'feedbackC2')">Verificar</button>
+            <span id="feedbackC2"></span></p>
+
+            <p>3. I <select id="presentContinuous5">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="am">am</option>
+            </select> <select id="presentContinuous6">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="write">write</option>
+                <option value="writing">writing</option>
+            </select> an email right now.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous5', 'presentContinuous6', 'am', 'writing', 'feedbackC3')">Verificar</button>
+            <span id="feedbackC3"></span></p>
+
+            <p>4. He <select id="presentContinuous7">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous8">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="read">read</option>
+                <option value="reading">reading</option>
+            </select> a book.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous7', 'presentContinuous8', 'is', 'reading', 'feedbackC4')">Verificar</button>
+            <span id="feedbackC4"></span></p>
+
+            <p>5. We <select id="presentContinuous9">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="are">are</option>
+                <option value="is">is</option>
+            </select> <select id="presentContinuous10">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="watch">watch</option>
+                <option value="watching">watching</option>
+            </select> TV right now.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous9', 'presentContinuous10', 'are', 'watching', 'feedbackC5')">Verificar</button>
+            <span id="feedbackC5"></span></p>
+
+            <p>6. She <select id="presentContinuous11">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous12">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="cook">cook</option>
+                <option value="cooking">cooking</option>
+            </select> dinner.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous11', 'presentContinuous12', 'is', 'cooking', 'feedbackC6')">Verificar</button>
+            <span id="feedbackC6"></span></p>
+
+            <p>7. They <select id="presentContinuous13">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous14">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="study">study</option>
+                <option value="studying">studying</option>
+            </select> English.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous13', 'presentContinuous14', 'are', 'studying', 'feedbackC7')">Verificar</button>
+            <span id="feedbackC7"></span></p>
+
+            <p>8. He <select id="presentContinuous15">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+            </select> <select id="presentContinuous16">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="sleep">sleep</option>
+                <option value="sleeping">sleeping</option>
+            </select> now.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous15', 'presentContinuous16', 'is', 'sleeping', 'feedbackC8')">Verificar</button>
+            <span id="feedbackC8"></span></p>
+
+            <p>9. We <select id="presentContinuous17">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="are">are</option>
+                <option value="is">is</option>
+            </select> <select id="presentContinuous18">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="listen">listen</option>
+                <option value="listening">listening</option>
+            </select> to music.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous17', 'presentContinuous18', 'are', 'listening', 'feedbackC9')">Verificar</button>
+            <span id="feedbackC9"></span></p>
+
+            <p>10. I <select id="presentContinuous19">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+            </select> <select id="presentContinuous20">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="work">work</option>
+                <option value="working">working</option>
+            </select> from home.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous19', 'presentContinuous20', 'am', 'working', 'feedbackC10')">Verificar</button>
+            <span id="feedbackC10"></span></p>
+
+            <p>11. The students <select id="presentContinuous21">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous22">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="study">study</option>
+                <option value="studying">studying</option>
+            </select> for their exams.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous21', 'presentContinuous22', 'are', 'studying', 'feedbackC11')">Verificar</button>
+            <span id="feedbackC11"></span></p>
+
+            <p>12. She <select id="presentContinuous23">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous24">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="paint">paint</option>
+                <option value="painting">painting</option>
+            </select> a beautiful picture.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous23', 'presentContinuous24', 'is', 'painting', 'feedbackC12')">Verificar</button>
+            <span id="feedbackC12"></span></p>
+
+            <p>13. They <select id="presentContinuous25">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous26">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="dance">dance</option>
+                <option value="dancing">dancing</option>
+            </select> at the party.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous25', 'presentContinuous26', 'are', 'dancing', 'feedbackC13')">Verificar</button>
+            <span id="feedbackC13"></span></p>
+
+            <p>14. He <select id="presentContinuous27">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous28">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="build">build</option>
+                <option value="building">building</option>
+            </select> a new house.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous27', 'presentContinuous28', 'is', 'building', 'feedbackC14')">Verificar</button>
+            <span id="feedbackC14"></span></p>
+
+            <p>15. We <select id="presentContinuous29">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="am">am</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous30">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="plan">plan</option>
+                <option value="planning">planning</option>
+            </select> our trip.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous29', 'presentContinuous30', 'are', 'planning', 'feedbackC15')">Verificar</button>
+            <span id="feedbackC15"></span></p>
+
+            <p>16. The baby <select id="presentContinuous31">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous32">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="sleep">sleep</option>
+                <option value="sleeping">sleeping</option>
+            </select> peacefully.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous31', 'presentContinuous32', 'is', 'sleeping', 'feedbackC16')">Verificar</button>
+            <span id="feedbackC16"></span></p>
+
+            <p>17. She <select id="presentContinuous33">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous34">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="cook">cook</option>
+                <option value="cooking">cooking</option>
+            </select> dinner right now.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous33', 'presentContinuous34', 'is', 'cooking', 'feedbackC17')">Verificar</button>
+            <span id="feedbackC17"></span></p>
+
+            <p>18. They <select id="presentContinuous35">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous36">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="run">run</option>
+                <option value="running">running</option>
+            </select> in the park.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous35', 'presentContinuous36', 'are', 'running', 'feedbackC18')">Verificar</button>
+            <span id="feedbackC18"></span></p>
+
+            <p>19. He <select id="presentContinuous37">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="is">is</option>
+                <option value="are">are</option>
+            </select> <select id="presentContinuous38">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="read">read</option>
+                <option value="reading">reading</option>
+            </select> a book.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous37', 'presentContinuous38', 'is', 'reading', 'feedbackC19')">Verificar</button>
+            <span id="feedbackC19"></span></p>
+
+            <p>20. We <select id="presentContinuous39">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="are">are</option>
+                <option value="is">is</option>
+            </select> <select id="presentContinuous40">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="prepare">prepare</option>
+                <option value="preparing">preparing</option>
+            </select> for the exam.
+            <button type="button" onclick="checkDoubleAnswer('presentContinuous39', 'presentContinuous40', 'are', 'preparing', 'feedbackC20')">Verificar</button>
+            <span id="feedbackC20"></span></p>
+            <div style="display: flex; justify-content: flex-start;">
+                <img src="./IMG/present-continuous.webp" width="500px" style="margin-right: 10px;">
+                <img src="./IMG/presentcontinous.jpg" width="500px" style="marging-left: 50px;">
+            </div>
+            
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Aprende Inglés Fácilmente</p> 
+</footer>
+
+<script>
+    function checkDoubleAnswer(selectId1, selectId2, correctAnswer1, correctAnswer2, feedbackId) {
+        const userAnswer1 = document.getElementById(selectId1).value;
+        const userAnswer2 = document.getElementById(selectId2).value;
+        const feedback = document.getElementById(feedbackId);
+
+        if (userAnswer1 === correctAnswer1 && userAnswer2 === correctAnswer2) {
+            feedback.textContent = "¡Correcto!";
+            feedback.style.color = "green";
+        } else {
+            feedback.textContent = "Incorrecto. Intenta de nuevo.";
+            feedback.style.color = "red";
+        }
+    }
+    
+</script>
+
+</body>
+</html>

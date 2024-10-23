@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Presente Simple</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>Presente Simple</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a> -
+    <a href="presente-simple.html">Presente Simple</a> -
+    <a href="presente-continuo.html">Presente Continuo</a> -
+    <a href="pasado-simple.html">Pasado Simple</a> -
+    <a href="futuro.html">Futuro</a>
+    <a href="vocabulario.html">Vocabulario</a>-
+</nav>
+
+<main>
+    <section>
+        <h2>Ejercicios de Presente Simple</h2>
+        <form id="simplePresentForm">
+            <p>1. She <select id="simplePresent1">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="go">go</option>
+                <option value="goes">goes</option>
+            </select> to school every day.
+            <button type="button" onclick="checkAnswer('simplePresent1', 'goes', 'feedback1')">Verificar</button>
+            <span id="feedback1"></span></p>
+
+            <p>2. They <select id="simplePresent2">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="plays">plays</option>
+                <option value="play">play</option>
+            </select> football on weekends.
+            <button type="button" onclick="checkAnswer('simplePresent2', 'play', 'feedback2')">Verificar</button>
+            <span id="feedback2"></span></p>
+
+            <p>3. He <select id="simplePresent3">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="eat">eat</option>
+                <option value="eats">eats</option>
+            </select> breakfast at 7:00 AM.
+            <button type="button" onclick="checkAnswer('simplePresent3', 'eats', 'feedback3')">Verificar</button>
+            <span id="feedback3"></span></p>
+
+            <p>4. We <select id="simplePresent4">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="like">like</option>
+                <option value="likes">likes</option>
+            </select> pizza.
+            <button type="button" onclick="checkAnswer('simplePresent4', 'like', 'feedback4')">Verificar</button>
+            <span id="feedback4"></span></p>
+
+            <p>5. They <select id="simplePresent5">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="drink">drink</option>
+                <option value="drinks">drinks</option>
+            </select> water after lunch.
+            <button type="button" onclick="checkAnswer('simplePresent5', 'drink', 'feedback5')">Verificar</button>
+            <span id="feedback5"></span></p>
+
+            <p>6. The dog <select id="simplePresent6">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="bark">bark</option>
+                <option value="barks">barks</option>
+            </select> at strangers.
+            <button type="button" onclick="checkAnswer('simplePresent6', 'barks', 'feedback6')">Verificar</button>
+            <span id="feedback6"></span></p>
+
+            <p>7. We <select id="simplePresent7">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="go">go</option>
+                <option value="goes">goes</option>
+            </select> to the gym every weekend.
+            <button type="button" onclick="checkAnswer('simplePresent7', 'go', 'feedback7')">Verificar</button>
+            <span id="feedback7"></span></p>
+
+            <p>8. My parents <select id="simplePresent8">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="visit">visit</option>
+                <option value="visits">visits</option>
+            </select> their friends every month.
+            <button type="button" onclick="checkAnswer('simplePresent8', 'visit', 'feedback8')">Verificar</button>
+            <span id="feedback8"></span></p>
+
+            <p>9. The cat <select id="simplePresent9">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="sleep">sleep</option>
+                <option value="sleeps">sleeps</option>
+            </select> all day.
+            <button type="button" onclick="checkAnswer('simplePresent9', 'sleeps', 'feedback9')">Verificar</button>
+            <span id="feedback9"></span></p>
+
+            <p>10. John <select id="simplePresent10">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="work">work</option>
+                <option value="works">works</option>
+            </select> at a bank.
+            <button type="button" onclick="checkAnswer('simplePresent10', 'works', 'feedback10')">Verificar</button>
+            <span id="feedback10"></span></p>
+
+            <p>11. We <select id="simplePresent11">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="love">love</option>
+                <option value="loves">loves</option>
+            </select> to watch movies.
+            <button type="button" onclick="checkAnswer('simplePresent11', 'love', 'feedback11')">Verificar</button>
+            <span id="feedback11"></span></p>
+
+            <p>12. Sarah <select id="simplePresent12">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="read">read</option>
+                <option value="reads">reads</option>
+            </select> a book every night.
+            <button type="button" onclick="checkAnswer('simplePresent12', 'reads', 'feedback12')">Verificar</button>
+            <span id="feedback12"></span></p>
+
+            <p>13. My brother <select id="simplePresent13">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="play">play</option>
+                <option value="plays">plays</option>
+            </select> the guitar.
+            <button type="button" onclick="checkAnswer('simplePresent13', 'plays', 'feedback13')">Verificar</button>
+            <span id="feedback13"></span></p>
+
+            <p>14. They <select id="simplePresent14">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="watch">watch</option>
+                <option value="watches">watches</option>
+            </select> TV after dinner.
+            <button type="button" onclick="checkAnswer('simplePresent14', 'watch', 'feedback14')">Verificar</button>
+            <span id="feedback14"></span></p>
+
+            <p>15. She <select id="simplePresent15">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="walk">walk</option>
+                <option value="walks">walks</option>
+            </select> to work every morning.
+            <button type="button" onclick="checkAnswer('simplePresent15', 'walks', 'feedback15')">Verificar</button>
+            <span id="feedback15"></span></p>
+
+            <p>16. The sun <select id="simplePresent16">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="rise">rise</option>
+                <option value="rises">rises</option>
+            </select> in the east.
+            <button type="button" onclick="checkAnswer('simplePresent16', 'rises', 'feedback16')">Verificar</button>
+            <span id="feedback16"></span></p>
+
+            <p>17. Birds <select id="simplePresent17">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="fly">fly</option>
+                <option value="flies">flies</option>
+            </select> in the sky.
+            <button type="button" onclick="checkAnswer('simplePresent17', 'fly', 'feedback17')">Verificar</button>
+            <span id="feedback17"></span></p>
+
+            <p>18. My father <select id="simplePresent18">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="drive">drive</option>
+                <option value="drives">drives</option>
+            </select> to work.
+            <button type="button" onclick="checkAnswer('simplePresent18', 'drives', 'feedback18')">Verificar</button>
+            <span id="feedback18"></span></p>
+
+            <p>19. They <select id="simplePresent19">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="play">play</option>
+                <option value="plays">plays</option>
+            </select> soccer every day.
+            <button type="button" onclick="checkAnswer('simplePresent19', 'play', 'feedback19')">Verificar</button>
+            <span id="feedback19"></span></p>
+
+            <p>20. He <select id="simplePresent20">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="teach">teach</option>
+                <option value="teaches">teaches</option>
+            </select> math at school.
+            <button type="button" onclick="checkAnswer('simplePresent20', 'teaches', 'feedback20')">Verificar</button>
+            <span id="feedback20"></span></p>
+            <img src="./IMG/presentsimple.webp" width="500px">
+
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Aprende Inglés Fácilmente</p>
+</footer>
+
+<script>
+    function checkAnswer(selectId, correctAnswer, feedbackId) {
+        const userAnswer = document.getElementById(selectId).value;
+        const feedback = document.getElementById(feedbackId);
+        
+        if (userAnswer === correctAnswer) {
+            feedback.textContent = "¡Correcto!";
+            feedback.style.color = "green";
+        } else {
+            feedback.textContent = "Incorrecto. Intenta de nuevo.";
+            feedback.style.color = "red";
+        }
+    }
+</script>
+
+</body>
+</html>

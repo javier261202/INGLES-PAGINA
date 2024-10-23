@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Futuro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>Futuro</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a> -
+    <a href="presente-simple.html">Presente Simple</a> -
+    <a href="presente-continuo.html">Presente Continuo</a> -
+    <a href="pasado-simple.html">Pasado Simple</a> -
+    <a href="futuro.html">Futuro</a>
+    <a href="vocabulario.html">Vocabulario</a>
+</nav>
+
+<main>
+    <section>
+        <h2>Ejercicios de Futuro</h2>
+        <form id="futureForm">
+            <p>1. I <select id="future1">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+            </select> <select id="future2">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> visit my grandparents tomorrow.
+            <button type="button" onclick="checkDoubleAnswer('future1', 'future2', 'am', 'going to', 'feedbackF1')">Verificar</button>
+            <span id="feedbackF1"></span></p>
+
+            <p>2. They <select id="future3">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="are">are</option>
+            </select> <select id="future4">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> watch a movie tonight.
+            <button type="button" onclick="checkDoubleAnswer('future3', 'future4', 'are', 'going to', 'feedbackF2')">Verificar</button>
+            <span id="feedbackF2"></span></p>
+
+            <p>3. She <select id="future5">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="is">is</option>
+            </select> <select id="future6">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> start a new job next week.
+            <button type="button" onclick="checkDoubleAnswer('future5', 'future6', 'is', 'going to', 'feedbackF3')">Verificar</button>
+            <span id="feedbackF3"></span></p>
+
+            <p>4. We <select id="future7">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="are">are</option>
+            </select> <select id="future8">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> go to the beach this weekend.
+            <button type="button" onclick="checkDoubleAnswer('future7', 'future8', 'are', 'going to', 'feedbackF4')">Verificar</button>
+            <span id="feedbackF4"></span></p>
+
+            <p>5. I <select id="future9">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+            </select> <select id="future10">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> call you later.
+            <button type="button" onclick="checkDoubleAnswer('future9', 'future10', 'will', '', 'feedbackF5')">Verificar</button>
+            <span id="feedbackF5"></span></p>
+
+            <p>6. He <select id="future11">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="is">is</option>
+            </select> <select id="future12">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> travel to Japan next year.
+            <button type="button" onclick="checkDoubleAnswer('future11', 'future12', 'will', '', 'feedbackF6')">Verificar</button>
+            <span id="feedbackF6"></span></p>
+
+            <p>7. They <select id="future13">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="are">are</option>
+            </select> <select id="future14">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> have a party tonight.
+            <button type="button" onclick="checkDoubleAnswer('future13', 'future14', 'are', 'going to', 'feedbackF7')">Verificar</button>
+            <span id="feedbackF7"></span></p>
+
+            <p>8. She <select id="future15">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="is">is</option>
+            </select> <select id="future16">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> buy a new dress.
+            <button type="button" onclick="checkDoubleAnswer('future15', 'future16', 'is', 'going to', 'feedbackF8')">Verificar</button>
+            <span id="feedbackF8"></span></p>
+
+            <p>9. We <select id="future17">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="are">are</option>
+            </select> <select id="future18">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> start a new course.
+            <button type="button" onclick="checkDoubleAnswer('future17', 'future18', 'are', 'going to', 'feedbackF9')">Verificar</button>
+            <span id="feedbackF9"></span></p>
+
+            <p>10. I <select id="future19">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+            </select> <select id="future20">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> help you with your homework.
+            <button type="button" onclick="checkDoubleAnswer('future19', 'future20', 'will', '', 'feedbackF10')">Verificar</button>
+            <span id="feedbackF10"></span></p>
+
+            <p>11. She <select id="future21">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="is">is</option>
+            </select> <select id="future22">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> visit her friend tomorrow.
+            <button type="button" onclick="checkDoubleAnswer('future21', 'future22', 'is', 'going to', 'feedbackF11')">Verificar</button>
+            <span id="feedbackF11"></span></p>
+
+            <p>12. They <select id="future23">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="are">are</option>
+            </select> <select id="future24">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> move to a new house next month.
+            <button type="button" onclick="checkDoubleAnswer('future23', 'future24', 'are', 'going to', 'feedbackF12')">Verificar</button>
+            <span id="feedbackF12"></span></p>
+
+            <p>13. He <select id="future25">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="is">is</option>
+            </select> <select id="future26">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> start a new hobby.
+            <button type="button" onclick="checkDoubleAnswer('future25', 'future26', 'is', 'going to', 'feedbackF13')">Verificar</button>
+            <span id="feedbackF13"></span></p>
+
+            <p>14. We <select id="future27">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="are">are</option>
+            </select> <select id="future28">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> renovate the kitchen.
+            <button type="button" onclick="checkDoubleAnswer('future27', 'future28', 'are', 'going to', 'feedbackF14')">Verificar</button>
+            <span id="feedbackF14"></span></p>
+
+            <p>15. She <select id="future29">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="is">is</option>
+            </select> <select id="future30">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> travel abroad next year.
+            <button type="button" onclick="checkDoubleAnswer('future29', 'future30', 'is', 'going to', 'feedbackF15')">Verificar</button>
+            <span id="feedbackF15"></span></p>
+
+            <p>16. They <select id="future31">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="are">are</option>
+            </select> <select id="future32">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> buy a new car soon.
+            <button type="button" onclick="checkDoubleAnswer('future31', 'future32', 'are', 'going to', 'feedbackF16')">Verificar</button>
+            <span id="feedbackF16"></span></p>
+
+            <p>17. He <select id="future33">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="is">is</option>
+            </select> <select id="future34">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> start a new business.
+            <button type="button" onclick="checkDoubleAnswer('future33', 'future34', 'is', 'going to', 'feedbackF17')">Verificar</button>
+            <span id="feedbackF17"></span></p>
+
+            <p>18. We <select id="future35">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="are">are</option>
+            </select> <select id="future36">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> adopt a pet.
+            <button type="button" onclick="checkDoubleAnswer('future35', 'future36', 'are', 'going to', 'feedbackF18')">Verificar</button>
+            <span id="feedbackF18"></span></p>
+
+            <p>19. I <select id="future37">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="am">am</option>
+            </select> <select id="future38">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> learn to play the piano.
+            <button type="button" onclick="checkDoubleAnswer('future37', 'future38', 'will', '', 'feedbackF19')">Verificar</button>
+            <span id="feedbackF19"></span></p>
+
+            <p>20. They <select id="future39">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="will">will</option>
+                <option value="are">are</option>
+            </select> <select id="future40">
+                <option value="empty">--- Selecciona ---</option>
+                <option value="going to">going to</option>
+            </select> start a new project next month.
+            <button type="button" onclick="checkDoubleAnswer('future39', 'future40', 'will', '', 'feedbackF20')">Verificar</button>
+            <span id="feedbackF20"></span></p>
+            <img src ="./IMG/will.png" width="400">
+            <img src="./IMG/be goign to.webp" width="500">
+
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Aprende Inglés Fácilmente</p>
+</footer>
+
+<script>
+    function checkDoubleAnswer(selectId1, selectId2, correctAnswer1, correctAnswer2, feedbackId) {
+        const userAnswer1 = document.getElementById(selectId1).value;
+        const userAnswer2 = document.getElementById(selectId2).value;
+        const feedback = document.getElementById(feedbackId);
+
+        if (correctAnswer2 === '') {
+            // Si no se espera una segunda respuesta (por ejemplo, solo "will")
+            if (userAnswer1 === correctAnswer1) {
+                feedback.textContent = "¡Correcto!";
+                feedback.style.color = "green";
+            } else {
+                feedback.textContent = "Incorrecto. Intenta de nuevo.";
+                feedback.style.color = "red";
+            }
+        } else {
+            // Verifica ambas respuestas cuando se esperan dos (por ejemplo, "am going to")
+            if (userAnswer1 === correctAnswer1 && userAnswer2 === correctAnswer2) {
+                feedback.textContent = "¡Correcto!";
+                feedback.style.color = "green";
+            } else {
+                feedback.textContent = "Incorrecto. Intenta de nuevo.";
+                feedback.style.color = "red";
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
